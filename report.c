@@ -1,14 +1,20 @@
 #include <stdio.h>
-#define SIZE 5 //定数。配列の要素数
+#define SIZE 6 //定数。配列の要素数
 
 void dSort(int scores[SIZE]);
 
 int main(){                   
-    int scores[SIZE] = {0, 60, 70, 100, 90};
+    int scores[SIZE] = {100, 60, 70, 100, 90, 80};
+    printf("scores =");
+    for(int i=0;i<SIZE;i++){
+        printf(" %d",scores[i]);
+    }
+    printf("\nresults =");    
     dSort(scores);
     for(int i=0;i<SIZE;i++){
-        printf("%d\n",scores[i]);
+        printf(" %d",scores[i]);
     }
+    printf("\n");
     return 0;
 }
 
